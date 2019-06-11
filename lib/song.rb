@@ -10,9 +10,5 @@ class Song
     song = self.new(filename[0])
     song.genre = filename[2].chomp('.mp3')
     @artist = Artist.find_or_create_by_name(filename[1])
-    song.artist.add_song(song)
-  #  @artist = file.name.split(" - ")[0]
-  #  @name = file.name.split(" - ")[1]
-  #  @genre = file.name.split(" - ")[2].chomp('.mp3')
-  end
+
 end
