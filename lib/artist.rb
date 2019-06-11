@@ -31,6 +31,7 @@ class Artist
       if item.name == name
         count += 1
         artist = item
+        break if count > 0
       end
     end
     if count == 0
