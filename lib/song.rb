@@ -13,4 +13,3 @@ class Song
     @artist.add_song(song)
   end
 end
-
