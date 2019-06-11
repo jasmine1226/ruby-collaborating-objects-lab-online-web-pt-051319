@@ -11,5 +11,6 @@ class Song
     song.genre = filename[2].chomp('.mp3')
     song.artist = Artist.find_or_create_by_name(filename[0])
     song.artist.add_song(song)
+    song
   end
 end
