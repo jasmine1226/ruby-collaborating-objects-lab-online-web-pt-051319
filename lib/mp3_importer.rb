@@ -8,6 +8,9 @@ class MP3Importer
   def files
     Dir.chdir(@path)
     @files = Dir.glob("*.mp3")
+    @files.collect do |file|
+      file.sub("./spec/fixtures/mp3s", "")
+    end
   end
 
   def import
