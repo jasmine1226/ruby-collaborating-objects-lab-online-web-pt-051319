@@ -36,4 +36,5 @@ class Artist
     @song.each do |song|
       puts song.name
     end
+  end
 end
