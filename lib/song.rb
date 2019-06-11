@@ -7,6 +7,6 @@ class Song
 
   def new_by_filename(filename)
     @artist = file.name.split(" - ")[0]
-    
+
   end
 end
