@@ -10,9 +10,10 @@ class MP3Importer
     @files = Dir.glob("*.mp3")
     @files.collect do |file|
     #  file.sub("./spec/fixtures/mp3s", "")
-      puts file
+
     end
-    @files.flatten
+    puts "#{file}"
+    file
   end
 
   def import
