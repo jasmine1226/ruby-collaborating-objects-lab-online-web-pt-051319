@@ -7,6 +7,7 @@ class MP3Importer
 
   def files
     Dir.chdir(@path)
+    current_dir = Dir.getwd
     @files = Dir.glob("*.mp3")
     Dir.chdir(current_dir)
   end
