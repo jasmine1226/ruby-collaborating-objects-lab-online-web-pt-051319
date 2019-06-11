@@ -25,11 +25,18 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if self.all.include?(name)
-      Artist.name
-    else
-      Artist.new(name)
+    count = 0
+    artist = nil
+    for @all.each do |item|
+      if item.name == name
+        count += 1
+        artist = item
+      end
     end
+    if count == 0
+      artist = Artist.new(name)
+    end
+    artist
   end
 
   def print_songs
