@@ -27,17 +27,16 @@ class Artist
   def self.find_or_create_by_name(name)
     count = 0
     artist = nil
-    for @@all.each do |item|
-      puts item.name
-#      if item.name == name
-#        count += 1
-#        artist = item
-#      end
+    @@all.each do |item|
+      if item.name == name
+        count += 1
+        artist = item
+      end
     end
 
-#    if count == 0
-#      artist = Artist.new(name)
-#    end
+    if count == 0
+      artist = Artist.new(name)
+    end
     artist
   end
 
