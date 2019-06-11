@@ -12,6 +12,7 @@ class MP3Importer
     @files.collect do |file|
       puts file
     end
+    puts @files
   end
 
   def import
