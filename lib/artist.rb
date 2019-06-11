@@ -8,13 +8,15 @@ class Artist
     self.save
   end
 
-  def add_song
+  def add_song(song)
     @songs << song
   end
 
   def save
     @@all << self
   end
+
+  def self.all? { ||  }
 
   def self.find_or_create_by_name(name)
     if @@all.include?(name)
