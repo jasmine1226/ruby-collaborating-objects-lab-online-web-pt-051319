@@ -34,9 +34,9 @@ class Artist
       end
     end
 
-    if count == 0
-      artist = Artist.new(name)
-    end
+#    if count == 0
+#      artist = Artist.new(name)
+#    end
     artist
   end
 
