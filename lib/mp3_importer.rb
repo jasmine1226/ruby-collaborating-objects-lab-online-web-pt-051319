@@ -9,8 +9,8 @@ class MP3Importer
     Dir.chdir(@path)
     @files = Dir.glob("*.mp3")
 
-    puts "#{file}"
-    file
+    puts "#{@files}"
+    @files
   end
 
   def import
