@@ -33,7 +33,6 @@ class Artist
         artist = item
       end
     end
-
     if count == 0
       artist = Artist.new(name)
     end
