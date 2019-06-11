@@ -15,5 +15,6 @@ class Song
 #    puts @artist.name
 
 #    @artist.add_song(song)
+    song
   end
 end
