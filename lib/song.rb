@@ -9,7 +9,7 @@ class Song
     filename = filename.split(" - ")
     puts "artist = #{filename[0]}"
     puts "name = #{filename[1]}"
-    puts "genre = #{filename[2]}"
+    puts "genre = #{filename[2].chomp('.mp3')}"
 
   #  @artist = file.name.split(" - ")[0]
   #  @name = file.name.split(" - ")[1]
