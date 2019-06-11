@@ -1,10 +1,12 @@
 class MP3Importer
+  attr_accessor :path
 
   def initialize(path)
+    @path = path
   end
 
   def files
-    Dir.entries(files,".mp3")
+    Dir.entries(@path,".mp3")
   end
 
   def import
